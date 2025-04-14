@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Li Zifei's portfolio</title>
+
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/style1.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+</head>
+<body>
+  <div class="page-content">
+    <nav role="navigation" class="nav-menu w-nav-menu">
+      <div class="logo_header">
+        <img src="images/kaukau.png" alt="">
+      </div>
+       <div class="nav_list">
+          <a href="index1.html" aria-current="page" >
+            <div class="button-text-wrapper">
+              <div class="button-text">Home,</div>
+            
+            </div>
+          </a>
+          <a href="about.html">
+            <div class="button-text-wrapper">
+              <div class="button-text">About,</div>
+            
+            </div>
+          </a>
+          <a href="work.html" >
+            <div class="button-text-wrapper">
+              <div class="button-text">Works,</div>
+            
+            </div>
+          </a>
+       
+       </div>
+    </nav>
+    
+ 
+  <section></section>
+  <section class="section-2"><img src="images/lulu5.jpg"  class="image-8">
+    <div class="w-layout-layout">
+      <div class="w-layout-cell">
+        <h1 class="heading animate__animated" id="introText">summer sweat games</h1>
+      </div>
+      <div class="w-layout-cell">
+        <p class="paragraph">In the heat of summer, lululemon invites the community to team up with their friends and partners to join the “2023 Summer Sweat Games” physical fitness challenge.</p>
+        <p class="paragraph-1">This physical fitness competition, which will be held since 2021, encourages people to challenge themselves and unleash their potential while sweating, and to connect with their partners in real life, accomplishing common growth with others.</p>
+      </div>
+    </div>
+    <section>
+      <div class="w-layout-layout">
+        <div class="w-layout-cell animate__animated" id="introText2"><img src="images/lulu3.jpg"  class="image-5"></div>
+        <div class="w-layout-cell animate__animated" id="introText3"><img src="images/lulu4.jpg" class="image-4"></div>
+      </div>
+    </section>
+    <section class="section-4">
+      <div class="container-3">
+        <p>In our opinion, the main visualization of “Summer Fun Challenge” should stay in the moment of “sweating in the summer heat”, and keep the dynamic moment of completing the challenge together with partners. Therefore, in KineticTypography&#x27;s various attempts, we tried to find the best configuration of visual dynamics and semantics, using localized repetitions to express rhythm and convergence, which also means releasing the potential and inspiring people to participate in the challenge with visual fun.</p>
+      </div>
+      <section>
+        <div id="w-node-_652268d6-b241-ad03-303d-102bf675c0c2-63e34b28" class="w-layout-layout">
+          <div class="w-layout-cell animate__animated" id="introText4"><img src="images/lulu2.jpg" class="image-6"></div>
+          <div class="w-layout-cell animate__animated" id="introText5"><img src="images/lulu1.jpg" class="image-7"></div>
+        </div>
+      </section>
+    </section>
+  </section>
+
+ 
+  <div class="footer_content">
+    <div class="footer_content_left">
+        <div class="footer_content_left_1"  >
+            <div class="footer_content_left_1_title">
+              Sitemap
+            </div>
+            <ul >
+              <li class="footer_content_left_1_li">
+                <a href="index1.html" aria-current="page" >
+                    <div class="button-text-footer">Home</div>
+                </a>
+              </li>
+              <li class="footer_content_left_1_li">
+                Works
+              </li>
+              <li class="footer_content_left_1_li">
+                <a href="about.html">
+                  <div class="button-text-footer">About</div>
+                </a>
+              </li>
+             
+            </ul>
+        </div>
+      <div class="footer_content_left_1"  >
+        <div class="footer_content_left_1_title">
+          Social
+        </div>
+        <ul >
+          <li class="footer_content_left_1_li">
+            Instagram
+          </li>
+          <li class="footer_content_left_1_li">
+            Weibo
+          </li>
+          <li class="footer_content_left_1_li">
+            Xiaohongshu
+          </li>
+          <li class="footer_content_left_1_li">
+            Behance
+          </li>
+        </ul>
+    </div>
+    <div class="footer_content_left_1"  >
+      <div class="footer_content_left_1_title">
+        Email
+      </div>
+      <ul >
+        <li class="footer_content_left_1_li">
+          info@kaukau.design
+        </li>
+       
+      </ul>
+  </div>
+    
+</div>
+ 
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+<script>
+  
+
+  // 添加滚动监听来触发动画
+  const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  const text = entry.target;
+                  // text.style.opacity = "1";
+                  text.classList.add("animate__fadeInUp");
+                  // 动画完成后移除观察器
+                  observer.unobserve(text);
+              }
+          });
+      }, {
+          threshold: 0.1 // 当元素10%进入视口时触发
+      });
+
+      // 开始观察文本元素
+      const introText = document.getElementById("introText");
+      const introText2 = document.getElementById("introText2");
+      const introText3 = document.getElementById("introText3");
+      const introText4 = document.getElementById("introText4");
+      const introText5 = document.getElementById("introText5");
+      observer.observe(introText);
+      observer.observe(introText2);
+      observer.observe(introText3);
+      observer.observe(introText4);
+      observer.observe(introText5);
+</script>
+  
+</body>
+</html>

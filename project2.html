@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Li Zifei's portfolio</title>
+
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/style1.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+</head>
+<body>
+  <div class="page-content">
+    <nav role="navigation" class="nav-menu w-nav-menu">
+      <div class="logo_header">
+        <img src="images/kaukau.png" alt="">
+      </div>
+       <div class="nav_list">
+          <a href="index1.html" aria-current="page" >
+            <div class="button-text-wrapper">
+              <div class="button-text">Home,</div>
+            
+            </div>
+          </a>
+          <a href="about.html">
+            <div class="button-text-wrapper">
+              <div class="button-text">About,</div>
+            
+            </div>
+          </a>
+          <a href="work.html" >
+            <div class="button-text-wrapper">
+              <div class="button-text">Works,</div>
+            
+            </div>
+          </a>
+       
+       </div>
+    </nav>
+    
+ 
+  <section></section>
+  <section class="section-2"><img src="images/nike3.jpg"  class="image-8">
+    <div class="w-layout-layout" >
+      <div class="w-layout-cell">
+        <h1 class="heading animate__animated" id="introText">nike membership gwp</h1>
+      </div>
+      <div class="w-layout-cell">
+        <p class="paragraph">The NIKE Membership Growth Program is newly launched to motivate members to continue to participate and upgrade to have a stronger sense of belonging and identity. As a brand with true sports culture and genes, they want to reward members for their love of sports in the most NIKE sportsmanship way.</p>
+        <p class="paragraph-1">KAUKAU took inspiration from NKE's heritage according to the different levels of membership and used a series of classic statements as visual elements, placing them in different historical moments with the spirit of NKE, and using “glow” as a visual clue throughout the entire project, providing a complete set of four levels of membership gifts. A set of four levels of membership gifts were designed. The unique rewards were carefully crafted to convey the values that the brand cares about: &quot;Every step of growth deserves to be rewarded.</p>
+      </div>
+    </div>
+    <section>
+      <div class="w-layout-layout">
+        <div class="w-layout-cell animate__animated" id="introText2"><img src="images/nike2.jpg"  class="image-5"></div>
+        <div class="w-layout-cell animate__animated" id="introText3"><img src="images/nike1.jpg" class="image-4"></div>
+      </div>
+    </section>
+    <section class="section-4">
+      <div class="container-3">
+        <p>In addition to being used in the design of member gifts, this visual presentation will also be extended in the promotional activities related to the online and offline stores of the Membership Growth Program.</p>
+      </div>
+      <section>
+        <div class="w-layout-layout">
+          <div class="w-layout-cell animate__animated" id="introText4"><img src="images/Mask-group1.jpg" class="image-6"></div>
+          <div class="w-layout-cell animate__animated" id="introText5"><img src="images/nike4.jpg" class="image-7"></div>
+        </div>
+      </section>
+    </section>
+  </section>
+
+  
+  <div class="footer_content">
+    <div class="footer_content_left">
+        <div class="footer_content_left_1"  >
+            <div class="footer_content_left_1_title">
+              Sitemap
+            </div>
+            <ul >
+              <li class="footer_content_left_1_li">
+                <a href="index1.html" aria-current="page" >
+                    <div class="button-text-footer">Home</div>
+                </a>
+              </li>
+              <li class="footer_content_left_1_li">
+                Works
+              </li>
+              <li class="footer_content_left_1_li">
+                <a href="about.html">
+                  <div class="button-text-footer">About</div>
+                </a>
+              </li>
+             
+            </ul>
+        </div>
+      <div class="footer_content_left_1"  >
+        <div class="footer_content_left_1_title">
+          Social
+        </div>
+        <ul >
+          <li class="footer_content_left_1_li">
+            Instagram
+          </li>
+          <li class="footer_content_left_1_li">
+            Weibo
+          </li>
+          <li class="footer_content_left_1_li">
+            Xiaohongshu
+          </li>
+          <li class="footer_content_left_1_li">
+            Behance
+          </li>
+        </ul>
+    </div>
+    <div class="footer_content_left_1"  >
+      <div class="footer_content_left_1_title">
+        Email
+      </div>
+      <ul >
+        <li class="footer_content_left_1_li">
+          info@kaukau.design
+        </li>
+       
+      </ul>
+  </div>
+    
+</div>
+ 
+</div>
+
+
+
+
+
+
+</div>
+
+  <script>
+ 
+
+    // 添加滚动监听来触发动画
+    const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const text = entry.target;
+                    // text.style.opacity = "1";
+                    text.classList.add("animate__fadeInUp");
+                    // 动画完成后移除观察器
+                    observer.unobserve(text);
+                }
+            });
+        }, {
+            threshold: 0.1 // 当元素10%进入视口时触发
+        });
+  
+        // 开始观察文本元素
+        const introText = document.getElementById("introText");
+        const introText2 = document.getElementById("introText2");
+        const introText3 = document.getElementById("introText3");
+        const introText4 = document.getElementById("introText4");
+        const introText5 = document.getElementById("introText5");
+        observer.observe(introText);
+        observer.observe(introText2);
+        observer.observe(introText3);
+        observer.observe(introText4);
+        observer.observe(introText5);
+  </script>
+    
+ 
+</body>
+</html>

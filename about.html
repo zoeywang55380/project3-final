@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Li Zifei's portfolio</title>
+
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/style1.css" rel="stylesheet" type="text/css">
+  <link href="css/style3.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+  <div class="page-content">
+    <nav role="navigation" class="nav-menu w-nav-menu">
+      <div class="logo_header">
+        <img src="images/kaukau.png" alt="">
+      </div>
+       <div class="nav_list">
+          <a href="index1.html" aria-current="page" >
+            <div class="button-text-wrapper">
+              <div class="button-text">Home,</div>
+            
+            </div>
+          </a>
+          <a href="about.html">
+            <div class="button-text-wrapper">
+              <div class="button-text">About,</div>
+            
+            </div>
+          </a>
+          <a href="work.html" >
+            <div class="button-text-wrapper">
+              <div class="button-text">Works,</div>
+            
+            </div>
+          </a>
+       
+       </div>
+    </nav>
+  <section></section>
+  <section class="section-2">
+    <div class="w-layout-layout quick-stack-5 wf-layout-layout">
+      <div class="w-layout-cell">
+        <h1 class="heading animate__animated" id="introText">About Me</h1>
+        <p class="paragraph">Hi! I&#x27;m Zifei Li, a brand designer. In 2018 I returned to Shanghai after graduating from the Design Academy Eindhoven in the Netherlands and founded KAUKAU design studio, designing and upgrading the brand image for lululemon, nike, MAIA and other brands.<br><br>I focus on providing effective visual solutions, such as art direction, brand visuals, publications, images, photography, installations, and interface design,etc. I strive to explore innovative mediums to build connections with others via their unique visual thinking, taking advantage of cutting-edge technologies and different visual languages.</p>
+      </div>
+      <div class="w-layout-cell cell"><img src="images/lzf.jpg" loading="lazy" width="395" alt="" class="image-2"></div>
+    </div>
+    <section>
+   
+      <div class="w-layout-layout quick-stack-3 wf-layout-layout">
+        <div class="w-layout-cell">
+          <h1 class="heading-2 animate__animated" id="introText2">Expertise</h1>
+        </div>
+        <div class="w-layout-cell cell-2">
+          <section class="section-3"></section>
+          <p class="paragraph-2">visual concept</p>
+          <p class="paragraph-2">storytelling</p>
+          <p class="paragraph-2">visual identity</p>
+          <p class="paragraph-2">art direction</p>
+          <p class="paragraph-2">package design</p>
+          <p class="paragraph-2">type design</p>
+          <p class="paragraph-2">motion design</p>
+          <p class="paragraph-2">props design</p>
+          <p class="paragraph-2">community design</p>
+          <p class="paragraph-2">social media</p>
+        </div>
+      </div>
+      
+
+
+   
+        <div class="w-layout-cell">
+          <h1 class="heading-2 animate__animated" id="introText3">CONTACT</h1>
+        </div>
+     
+
+
+        <div class="concat_form">
+          <div class="concat_form_left">
+            <div class="concat_form_left_item">
+              <p class="concat_form_left_item_title">INSTAGRAM</p>
+             
+              <p class="concat_form_left_item_info">Kaukau_design</p>
+            </div>
+            <div class="concat_form_left_item">
+              <p class="concat_form_left_item_title">WEIBO</p>
+              <p class="concat_form_left_item_info">Kaukau_design</p>
+
+            </div>
+            <div class="concat_form_left_item">
+              <p class="concat_form_left_item_title">EMAIL</p>
+              <p class="concat_form_left_item_info">info@kaukau.design</p>
+
+            </div>
+          </div>
+          <div class="concat_form_right">
+            <div class="concat_form_left_item">
+              <p class="concat_form_left_item_title">ADDRESS </p>
+              <p class="concat_form_left_item_info1">Nanyang Rd, Shanghai, China</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </section>
+  </section>
+  
+ 
+
+</body>
+<script>
+
+
+      const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  const text = entry.target;
+                  // text.style.opacity = "1";
+                  text.classList.add("animate__fadeInUp");
+                  // 动画完成后移除观察器
+                  observer.unobserve(text);
+              }
+          });
+      }, {
+          threshold: 0.1 // 当元素10%进入视口时触发
+      });
+
+      // 开始观察文本元素
+      const introText = document.getElementById("introText");
+      const introText2 = document.getElementById("introText2");
+      const introText3 = document.getElementById("introText3");
+      // const introText4 = document.getElementById("introText4");
+      // const introText5 = document.getElementById("introText5");
+      observer.observe(introText);
+      observer.observe(introText2);
+      observer.observe(introText3);
+      // observer.observe(introText4);
+      // observer.observe(introText5);
+</script>
+</html>
